@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: greenyellow;
+    padding: 10px;
+}
+.nav-logo{
+    height: 1cm;
+}
+
+.navbar-brand {
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Home section styling */
+.home {
+    text-align: center;
+    padding: 20px;
+    background-image: url('./images/farm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home img {
+    height: 3cm;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.home h1, .home h2 {
+    margin: 10px 0;
+}
+
+.home p {
+    font-weight: 700;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Soil Test Section */
+.container-soil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.container-soil contain {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: small;
+    background-color: #b7d822;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .home img {
+        height: 2cm;
+        margin: 0 auto 20px;
+    }
+
+    .home h1, .home h2, .home p {
+        font-size: 1em;
+        margin: 10px 20px;
+    }
+
+    .container-soil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-soil contain {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav img {
+        margin: 10px 0;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .home img {
+        height: 1.5cm;
+    }
+}
+.container-soil{
+    background-image: url('./images/soil1.PNG');
+     background-size: cover;
+}
+.text{
+    text-align: center;
+}
